@@ -33,7 +33,7 @@ public class Battle extends Map {	// Creates the Battle Class/ extends Map
 		panel4 = new JPanel();	// Creates the JPanel
 		panel5 = new JPanel();	// Creates the JPanel
 		frame1.getContentPane().setBackground(new Color(76, 178, 42));	// Sets the background color
-		frame1.setPreferredSize(new Dimension(607, 629));	// Sets the size of the JFrame
+		frame1.setPreferredSize(new Dimension(620, 640));	// Sets the size of the JFrame
 		frame1.pack();	// Packs the window so that it is the size of the JFrame
 		frame1.setVisible(true);	// Makes the JFrame visible
 		frame1.setResizable(false);	// Does not allow the JFrame to be resized
@@ -50,7 +50,7 @@ public class Battle extends Map {	// Creates the Battle Class/ extends Map
 
 		label8 = new JLabel("Health: " + EnemyHealth);	// Adds the enemy health to the JLabel
 
-		panel1.setPreferredSize(new Dimension(162, 26));	// Sets the dimensions of the JPanel
+		panel1.setPreferredSize(new Dimension(162, 40));	// Sets the dimensions of the JPanel
 		panel1.setBackground(new Color(76, 178, 42));	// Sets the color of the JPanel
 
 		panel2.setPreferredSize(new Dimension(160, 220));	// Sets the dimensions of the JPanel
@@ -87,9 +87,9 @@ public class Battle extends Map {	// Creates the Battle Class/ extends Map
 		panel5.add(label8);	// Adds the label to the panel
 
 		panel1.setLayout(layout1);	// Sets the layout of the panel
-		layout1.putConstraint(SpringLayout.SOUTH, attack, 0, SpringLayout.SOUTH, panel1);	// Sets the position of the button within the panel
-		layout1.putConstraint(SpringLayout.SOUTH, runAway, 0, SpringLayout.SOUTH, panel1);	// Sets the position of the button within the panel
-		layout1.putConstraint(SpringLayout.WEST, runAway, 71, SpringLayout.WEST, panel1);	// Sets the position of the button within the panel
+		layout1.putConstraint(SpringLayout.SOUTH, attack, -10, SpringLayout.SOUTH, panel1);	// Sets the position of the button within the panel
+		layout1.putConstraint(SpringLayout.SOUTH, runAway, -10, SpringLayout.SOUTH, panel1);	// Sets the position of the button within the panel
+		layout1.putConstraint(SpringLayout.WEST, runAway, 70, SpringLayout.WEST, panel1);	// Sets the position of the button within the panel
 
 		frame1.setLayout(layout2);	// Sets the layout of the frame
 		layout2.putConstraint(SpringLayout.SOUTH, panel1, -30, SpringLayout.SOUTH, frame1);	// Sets the position of the panel within the frame

@@ -11,7 +11,7 @@ public class Driver {	// Create the Driver Class
 		Map map = new Map(a, "Wolf", 10, 5, 0, 1, 1, 1);	// Creates the Map object
 		JFrame frame = new JFrame("RPG");	// Creates the RPG JFrame
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	// Sets the JFrame to close when X button is clicked
-		frame.setPreferredSize(new Dimension(700, 629));	// Sets the size of the JFrame (607)
+		frame.setPreferredSize(new Dimension(710, 640));	// Sets the size of the JFrame (607)
 		frame.add(map);	// Adds the map object to the JFrame
 		frame.pack();	// Sets the Window to the size of the JFrame
 		frame.setVisible(true);	// Makes the JFrame visible
